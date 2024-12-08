@@ -2,7 +2,7 @@ local um = settings.startup["powered-belts-usage-multiplier"].value
 
 for _, v in pairs(data.raw["transport-belt"]) do
     if not string.match(v.name, "unpowered-")  then
-        local e = 32000*v.speed*um
+        local e = 160*v.speed*um
         local x = table.deepcopy(v)
         x.name = "unpowered-"..x.name
         x.speed = 1e-308 --speed has to be positive, this is close enough to 0
@@ -29,14 +29,14 @@ for _, v in pairs(data.raw["transport-belt"]) do
                     buffer_capacity = (17*e).."J"
                 },
                 energy_production = "0W",
-                energy_usage = e.."W"
+                energy_usage = e.."kW"
             }
         })
     end
 end
 for _, v in pairs(data.raw["underground-belt"]) do
     if not string.match(v.name, "unpowered-")  then
-        local e = 32000*v.speed*um*(v.max_distance+2)
+        local e = 160*v.speed*um*(v.max_distance+2)
         local x = table.deepcopy(v)
         x.name = "unpowered-"..x.name
         x.speed = 1e-308
@@ -63,14 +63,14 @@ for _, v in pairs(data.raw["underground-belt"]) do
                     buffer_capacity = (17*e).."J"
                 },
                 energy_production = "0W",
-                energy_usage = e.."W"
+                energy_usage = e.."kW"
             }
         })
     end
 end
 for _, v in pairs(data.raw["splitter"]) do
     if not string.match(v.name, "unpowered-")  then
-        local e = 32000*v.speed*um*5
+        local e = 160*v.speed*um*5
         local x = table.deepcopy(v)
         x.name = "unpowered-"..x.name
         x.speed = 1e-308
@@ -97,14 +97,14 @@ for _, v in pairs(data.raw["splitter"]) do
                     buffer_capacity = (17*e).."J"
                 },
                 energy_production = "0W",
-                energy_usage = e.."W"
+                energy_usage = e.."kW"
             }
         })
     end
 end
 for _, v in pairs(data.raw["loader-1x1"]) do
     if not string.match(v.name, "unpowered-")  then
-        local e = 32000*v.speed*um*5
+        local e = 160*v.speed*um*5
         local x = table.deepcopy(v)
         x.name = "unpowered-"..x.name
         x.speed = 1e-308
@@ -131,14 +131,14 @@ for _, v in pairs(data.raw["loader-1x1"]) do
                     buffer_capacity = (17*e).."J"
                 },
                 energy_production = "0W",
-                energy_usage = e.."W"
+                energy_usage = e.."kW"
             }
         })
     end
 end
 for _, v in pairs(data.raw["loader"]) do
     if not string.match(v.name, "unpowered-")  then
-        local e = 32000*v.speed*um*10
+        local e = 160*v.speed*um*10
         local x = table.deepcopy(v)
         x.name = "unpowered-"..x.name
         x.speed = 1e-308
@@ -165,7 +165,7 @@ for _, v in pairs(data.raw["loader"]) do
                     buffer_capacity = (17*e).."J"
                 },
                 energy_production = "0W",
-                energy_usage = e.."W"
+                energy_usage = e.."kW"
             }
         })
     end
