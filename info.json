@@ -1,0 +1,11 @@
+{
+    "name": "ElectricPoweredBelts",
+    "version": "0.1.0",
+    "title": "Powered Belts",
+    "author": "CATS",
+    "description": "Fork from the PoweredBelts mod made by Romner_set to make it available for factotio 2.0 :\n\"Belts now need power. All of them. Including all the modded ones.\"",
+    "contact": "To contact the real author : \"Mod portal or discord Romner#5341\"\n To contact me just make a discussion, I will try to look at them at much as I can.",
+    "homepage": "",
+    "factorio_version": "2.0",
+    "dependencies": ["base >= 2.0"]
+}
