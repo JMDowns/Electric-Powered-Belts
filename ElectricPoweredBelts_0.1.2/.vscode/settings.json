@@ -1,0 +1,9 @@
+{
+    "Lua.diagnostics.globals": [
+        "script",
+        "storage",
+        "defines",
+        "settings",
+        "data"
+    ]
+}

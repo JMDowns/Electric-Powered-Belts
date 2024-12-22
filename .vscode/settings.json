@@ -1,0 +1,12 @@
+{
+    "Lua.diagnostics.globals": [
+        "script",
+        "storage",
+        "defines",
+        "data",
+        "settings",
+        "resistances_immune",
+        "util",
+        "game"
+    ]
+}

@@ -1,0 +1,30 @@
+-- local energy_belt_recipe = {
+--     type = "recipe",
+--     name = "energy-transport-belt",
+--     enabled = true,
+--     ingredients = {
+--         {type = "item", name = "stone-furnace", amount = 1},
+--         {type = "item", name = "electronic-circuit", amount = 5}
+--     },
+--     results = {
+--         {type = "item", name = "energy-transport-belt", amount = 1} -- Nouveau format
+--       },
+--     subgroup = "belt",
+--     order = "a[transport-belt]-a[transport-belt]"
+-- }
+
+-- local energy_fast_belt_recipe = {
+--     type = "recipe",
+--     name = "energy-fast-transport-belt",
+--     enabled = true,
+--     ingredients = {
+--         {type = "item", name = "stone-furnace", amount = 1},
+--         {type = "item", name = "electronic-circuit", amount = 5}
+--     },
+--     results = {
+--         {type = "item", name = "energy-fast-transport-belt", amount = 1} -- Nouveau format
+--       },
+--     subgroup = "belt",
+--     order = "a[transport-belt]-b[fast-transport-belt]"
+-- }
+-- data:extend({energy_belt_recipe, energy_fast_belt_recipe})
