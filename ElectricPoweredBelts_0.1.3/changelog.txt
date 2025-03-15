@@ -1,0 +1,18 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.1.2
+Date: 2025.01.8
+  Info:
+    - Collision box removed, suggered by jmdowns00 and previously not tested by me
+---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+Date: 2024.12.8
+  Info:
+    - fixed some initial miss usage of the mods website
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 2024.12.8
+  Info:
+    - Initial fork
+    - Update to Factorio 2.0
+  Locale:
+    - English
